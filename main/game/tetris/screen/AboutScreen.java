@@ -60,7 +60,7 @@ public class AboutScreen extends Screen{
 			TWITTER_URI  = new URI("https://twitter.com/FELIXible69");
 			GITHUB_URI 	 = new URI("https://github.com/Philiks");
 			LINKEDIN_URI = new URI("https://www.linkedin.com/in/felix-janopol/");
-			GITHUB_REPOSITORY_URI = new URI("https://github.com/Philiks/classic-games");
+			GITHUB_REPOSITORY_URI = new URI("https://github.com/Philiks/java-tetris-game");
 		} catch (URISyntaxException e) {	e.printStackTrace();	}
 	}
 	
