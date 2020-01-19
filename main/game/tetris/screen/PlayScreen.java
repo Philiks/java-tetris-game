@@ -818,7 +818,7 @@ public class PlayScreen extends Screen{
 		}
 		
 		private void setSpeed(int level) {
-			SPEED = 1000 - (level * 50);
+			SPEED = 1000 - (level * 25);
 			int lockSpeed = (SPEED / 4) / 5;
 			int clearSpeed = (SPEED / 2) / (5 / 2);
 			
@@ -856,7 +856,9 @@ public class PlayScreen extends Screen{
 		
 		private void restart() {
 			tetrimino.setCurrentShape();
+			scoreToAdd = 0;
 			initPlayField();
+			setSpeed(level.getValue());
 			
 			Shape nextShape = tetrimino.getNextShape();
 			nextTetrimino.setTetrimino(Tetrimino.getImage(nextShape), Tetrimino.getDimension(nextShape));
